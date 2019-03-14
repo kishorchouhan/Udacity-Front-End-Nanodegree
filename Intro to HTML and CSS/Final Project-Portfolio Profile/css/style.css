@@ -1,0 +1,46 @@
+.container {
+    font-family: 'Lato', sans-serif;
+    color: gray;
+    font-weight: 300;
+}
+
+.logo {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.main_head {
+    font-size: 50px;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+.mainsub {
+    margin-right: 20px;
+}
+
+.seperator {
+    border-style: inset;
+    border-width: 3px;
+}
+
+.sub_head {
+    color: #BCBBBB;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.screenshot {
+    width: 100%;
+}
+
+.project_name {
+    color: #444851;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.link {
+    color: #616672;
+}
