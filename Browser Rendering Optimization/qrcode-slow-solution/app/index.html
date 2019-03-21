@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Capture QR Code</title>
+
+    <!-- Add to homescreen -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Fallback to homescreen for Chrome <39 on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Capture QR Code">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Capture QR Code">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#212121">
+
+    <meta name="theme-color" content="#212121">
+    
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+
+    <div class="wsk-layout wsk-js-layout">
+      <div class="wsk-layout__content">
+        <div id="camera" class="Camera">
+          <video class="Camera-video"></video>
+          <div class="Camera-overlay"></div>
+          <canvas id="qr-canvas" class="Camera-display"></canvas>
+          <div class="Camera-instructions">Point at a QR code</div>
+          <div class="Camera-toggle wsk-button wsk-js-button wsk-button--fab">
+            <input type="checkbox" id="checkbox-1" class="Camera-toggle-input" />
+            <label for="checkbox-1">
+              <img class="front" src="/images/ic_camera_front_24px.svg">
+              <img class="rear" src="/images/ic_camera_rear_24px.svg">
+            </label>
+          </div>
+        </div>
+     
+        <div id="qrcode" class="wsk-card wsk-shadow--z3 QRCodeSuccessDialog">
+          <div class="wsk-card--heading">
+             <span class="wsk-card--heading-text">QR Code found</span>
+          </div>
+          <div class="wsk-card--lower QRCodeSuccessDialog-data" >
+          </div>
+          <div class="wsk-card--bottom">
+            <div>
+              <button class="wsk-button wsk-js-button QRCodeSuccessDialog-navigate">Open</buton>
+              <button class="wsk-button wsk-js-button QRCodeSuccessDialog-ignore">Ignore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- build:js(app/) ../../scripts/main.min.js -->
+    <script src="scripts/wskComponentHandler.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/layout/layout.js"></script>
+    <script src="scripts/ripple/ripple.js"></script>
+    <script src="scripts/third_party/rAF.js"></script>
+    <script src="scripts/qrclient.js"></script>
+    <!-- endbuild -->
+    <!--
+    <script type="text/javascript" src="scripts/jsqrcode/grid.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/version.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/detector.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/formatinf.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/errorlevel.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/bitmat.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/datablock.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/bmparser.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/datamask.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/rsdecoder.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/gf256poly.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/gf256.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/decoder.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/qrcode.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/findpat.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/alignpat.js"></script>
+    <script type="text/javascript" src="scripts/jsqrcode/databr.js"></script>
+    -->
+    <script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', { scope: '/' })
+        .then(function() { console.log("Service Worker Registered"); });
+    }
+    </script>
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-59325548-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <!-- Built with love using Web Starter Kit -->
+  </body>
+</html>
