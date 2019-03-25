@@ -5,30 +5,19 @@
         <meta name="vieport" content="width=device-width, initial-scale=1">
         <title>Cat Clicker</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                var numClick = 0;
-                $("#catPic").on("click", function() {
-                    numClick += 1;
-                    var n = numClick.toString();
-                    document.getElementById("num").innerHTML = n;
-                });
-            });
-        </script>
-        <style>
-            img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            h3, p {
-                text-align: center;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <img src="img/cat.jpg" id="catPic">
-        <h3>Number of Clicks:</h3>
-        <p id="num">0</p>
+        <div id="cat1">
+            <img src="img/cat.jpg" id="catPic1">
+            <h3>Number of Clicks:</h3>
+            <p id="num1">0</p>
+        </div>
+        <div id="cat2">
+            <img src="img/cat2.jpg" id="catPic2">
+            <h3>Number of Clicks:</h3>
+            <p id="num2">0</p>
+        </div>
+        <script src="app.js"></script>
     </body>
 </html>

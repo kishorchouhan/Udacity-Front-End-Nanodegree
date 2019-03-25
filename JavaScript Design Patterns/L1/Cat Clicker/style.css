@@ -1,0 +1,19 @@
+#cat1 {
+    float: left;
+}
+
+#cat2 {
+    float: right;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 75%;
+}
+
+h3, p {
+    text-align: center;
+}
