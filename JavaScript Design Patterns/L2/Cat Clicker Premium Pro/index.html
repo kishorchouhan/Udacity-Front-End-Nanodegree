@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="vieport" content="width=device-width, initial-scale=1">
+        <title>Cat Clicker Premium Pro</title>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="column">
+            <ul id="catList"></ul>
+        </div>
+        
+
+        <div id="content" class="column">
+            <h1 id="catName"></h1>
+            <p id="clickCount"></p>
+            <img id="catPic" src="" alt="Cute cat">
+        </div>
+
+        <div class="column">
+            <button id="admin">Admin</button>
+
+            <div id="admin-content">
+                <form id="form">
+                    Name: <input type="text" name="name" id="adminName" value=""><br>
+                    IMG url: <input type="url" name="img_url" id="adminUrl" value=""><br>
+                    Number of clicks: <input type="number" name="numofClicks" id="adminClick" value="">
+                </form>
+                <button id="cancel">Cancel</button>
+                <button id="save">Save</button>
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
