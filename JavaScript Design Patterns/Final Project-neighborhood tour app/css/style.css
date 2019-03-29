@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    background: #f1f1f1;
+}
+
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 75%;
+}
