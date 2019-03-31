@@ -2,20 +2,29 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="vieport" content="width=device-width, initial-scale=1">
         <title>neighborhood tour app</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!--<link rel="stylesheet" href="css/style.css">-->
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="col-xs-9" id="map"></div>
+        <div class="app" id="app">
+            <div class="list" id="list">
+                <div class="search" id="search">
+                    <input class="search-box" id="search-box" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
+                </div>
 
+                <ul class="results" id="results" data-bind="foreach: filteredList">
+                    <li class="place" id="place" data-bind="text: name, click: bounce"></li>
+                </ul>
+            </div>
 
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1r8hd2A9KTZBW9Wp778cVfSaOQA2zN_o"></script>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+            <div class="map" id="map">If you can read this, there has been an error loading Google Maps. Please Try Again.</div>
+        </div>
+
         <script src="js/knockout-3.5.0.js"></script>
+        <script src="js/jquery.min.js"></script>
         <script src="js/app.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA6qoUKQ3WJQd4ZxAahhFPM80WJbw-yws&callback=startApp&libraries=places" onerror="errorHandling()"></script>
     </body>
 </html>
