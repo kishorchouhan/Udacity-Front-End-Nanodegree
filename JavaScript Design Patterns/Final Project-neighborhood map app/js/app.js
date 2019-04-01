@@ -1,12 +1,15 @@
 'use strict';
 
 var initialLocations = [
-    { tag: "places", name: 'Park Ave Penthouse', location: { lat: 40.7713024, lng: -73.9632393 } },
-    { tag: "places", name: 'Chelsea Loft', location: { lat: 40.7444883, lng: -73.9949465 } },
-    { tag: "places", name: 'Union Square Open Floor Plan', location: { lat: 40.7347062, lng: -73.9895759 } },
-    { tag: "Hotel", name: 'East Village Hip Studio', location: { lat: 40.7281777, lng: -73.984377 } },
-    { tag: "Hotel", name: 'TriBeCa Artsy Bachelor Pad', location: { lat: 40.7195264, lng: -74.0089934 } },
-    { tag: "Hotel", name: 'Chinatown Homey Space', location: { lat: 40.7180628, lng: -73.9961237 } }
+    { name: 'Amar Jawan Jyoti', location: { lat: 26.895762, lng: 75.799920 } },
+    { name: 'Amer fort', location: { lat: 26.957306, lng: 75.842844 } },
+    { name: 'Jaigarh Fort', location: { lat: 26.985089, lng: 75.845592 } },
+    { name: 'City Palace', location: { lat: 26.925772, lng: 75.823659 } },
+    { name: 'Jal Mahal', location: { lat: 26.953439, lng: 75.846181 } },
+    { name: 'Hawa Mahal', location: { lat: 26.923936, lng: 75.826744 } },
+    { name: 'Birla Mandir', location: { lat: 26.892197, lng: 75.815392 } },
+    { name: 'Galtaji Temple', location: { lat: 26.917556, lng: 75.856968 } },
+    { name: 'Jantar Mantar', location: { lat: 26.924764, lng: 75.824560 } }
 ];
 
 // Declaring global variables now to satisfy strict mode
@@ -116,7 +119,7 @@ function viewModel() {
 
     this.searchTerm = ko.observable("");
 
-    map = new google.maps.Map(document.getElementById('map'), {zoom: 13, center: {lat: 40.749597, lng: -73.987359}});
+    map = new google.maps.Map(document.getElementById('map'), {zoom: 12, center: {lat: 26.923936, lng: 75.826744}}); 
 
     // Foursquare API settings
 	clientID = "GAFURFHBM0KG23500KBAPQC5TM12SEUXBQCBSOK1TV0TCLGS";
