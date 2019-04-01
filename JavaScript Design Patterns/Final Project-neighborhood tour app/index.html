@@ -4,14 +4,13 @@
         <meta charset="utf-8">
         <meta name="vieport" content="width=device-width, initial-scale=1">
         <title>neighborhood tour app</title>
-        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <div class="app" id="app">
             <div class="list" id="list">
                 <div class="search" id="search">
-                    <input class="search-box" id="search-box" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
+                    <input class="search-box" placeholder="Search.." id="search-box" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
                 </div>
 
                 <ul class="results" id="results" data-bind="foreach: filteredList">
@@ -19,7 +18,7 @@
                 </ul>
             </div>
 
-            <div class="map" id="map">If you can read this, there has been an error loading Google Maps. Please Try Again.</div>
+            <div class="map" id="map"></div>
         </div>
 
         <script src="js/knockout-3.5.0.js"></script>
