@@ -428,14 +428,14 @@ function inName(oldName) {
                 this.formattedTitle = HTMLprojectTitle.replace("%data%",dataProject.projects[i].title);
                 this.formattedDates = HTMLprojectDates.replace("%data%",dataProject.projects[i].dates);
                 this.formattedDescription = HTMLprojectDescription.replace("%data%",dataProject.projects[i].description);
-                
+                viewProject.render();
+
                 if (dataProject.projects[i].images.length > 0) {
                     for (image in dataProject.projects[i].images) {
                         var formattedImage = HTMLprojectImage.replace("%data%",dataProject.projects[i].images[image]);
                         viewProject.renderProjectImg(formattedImage);
                     };
                 };
-                viewProject.render();
             };
         },
         render: function() {
