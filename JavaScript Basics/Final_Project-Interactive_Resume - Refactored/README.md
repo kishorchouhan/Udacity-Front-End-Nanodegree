@@ -1,29 +1,34 @@
 # Interactive Resume
 
-### Overview
+### Links to GitHub Repository (Master Branch)
+
+* My GitHub Project Repository: [https://github.com/kishorchouhan/Interactive_Resume-Udacity_Project](https://github.com/kishorchouhan/Interactive_Resume-Udacity_Project "My GitHub Project Repository")
+
+* My Project Website Is Hosted Here: [https://kishorchouhan.github.io/Interactive_Resume-Udacity_Project/](https://kishorchouhan.github.io/Interactive_Resume-Udacity_Project/ "My Hosted Website")
+
+To run the website and take code on local machine:
+
+1. Download the GitHub zip file or clone the repository onto your local workstation:
+	* zip file [https://github.com/kishorchouhan/Interactive_Resume-Udacity_Project/archive/master.zip](https://github.com/kishorchouhan/Interactive_Resume-Udacity_Project/archive/master.zip "download zip file")
+	* git clone [https://github.com/kishorchouhan/Interactive_Resume-Udacity_Project.git/](https://github.com/kishorchouhan/Interactive_Resume-Udacity_Project.git "git clone repository")
+2. Open a browser window and navigate to the index.html file in your directory.
+
+
+## Overview
 Udacity project in the Front-end Web Developer Nanodegree program.The purpose of this project was to practice basic JavaScript & jQuery skills such as loops, functions and DOM manipulation. All of the resume's content is filled in dynamically with jQuery. 
 
 - Fork the project repo from [Udacity's Github](https://github.com/udacity/frontend-nanodegree-resume)
 
 - Project was evaluated by a Udacity reviewer according to this [project rubric](https://review.udacity.com/?_ga=1.189245867.12280332.1465333852#!/projects/2962818615/rubric)
 
-## Mockup
+### Mockup
 This is the provided mockup of the resume project
 
 <img src="http://i.imgur.com/pWU1Xbl.png" width="500" height="500" />
 
 
-### How to get started
-
-Experience the app at https://kishorchouhan.github.io/
-
-To explore the codebase:
-- Open the index.html file.
-
-
-
-
 # Project Details
+
 ## How do I complete this project?
 Review the Online Resume [Project Rubric](https://review.udacity.com/?_ga=1.189245867.12280332.1465333852#!/projects/2962818615/rubric).
 

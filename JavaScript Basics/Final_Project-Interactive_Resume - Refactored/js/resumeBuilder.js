@@ -263,46 +263,65 @@ function inName(oldName) {
 
         projectData: {
             "projects": [{
+                    "title": "Frogger Arcade Game",
+                    "dates": "2019",
+                    "description": "Created this game as part of Final Project of Object-Oriented JavaScript course in Udacity's Front-End Web Developer Nanodegree.In this game the goal is simple, get the hero character to move across the gray bricks towards the water without getting hit by the enemy bugs. The speed of enemy bugs will change with start of each game." ,
+                    "images": ["images/Frogger Arcade Game.png"],
+                    "url": "https://kishorchouhan.github.io/Frogger-Arcade-Game-Udacity-Project/"
+                },{
+                    "title": "Cat Clicker App",
+                    "dates": "2019",
+                    "description": "Created this app as part of Project of JavaScript Design Patterns course in Udacity's Front-End Web Developer Nanodegree. In this app JavaScript is organized within a MVC (Model, View, Controller) architecture. In order to use this app, click on the name of the cat that you would like to see and their picture will appear on the right. Click on the 'Admin' button and three input boxes will appear. These boxes will allow you to change the name of the cat, the picture, and # of clicks on each cats' picture. Click the 'save' button to save your changes to the cat and the 'cancel' button to discard the changes." ,
+                    "images": ["images/Cat Clicker Premium Pro.png"],
+                    "url": "https://kishorchouhan.github.io/Cat-Clicker-Premium-Pro-Udacity-Project/"
+                },{
                     "title": "Online Resume",
                     "dates": "2019",
                     "description": "Created an online Interactive Resume as part of Final Project#2 of Udacity's Front-End Web Developer Nanodegree.",
-                    "images": ["images/resume.png"]
+                    "images": ["images/resume.png"],
+                    "url": "https://kishorchouhan.github.io/Interactive_Resume-Udacity_Project/"
                 },
                 {
                     "title": "Online Portfolio",
                     "dates": "2019",
                     "description": "Created an online portfolio of work as part of Final Project#1 of Udacity's Front-End Web Developer Nanodegree by using HTML, CSS and Bootstrap.",
-                    "images": ["images/Portfolio_Profile-Kishor.png"]
+                    "images": ["images/Portfolio_Profile-Kishor.png"],
+                    "url": "https://kishorchouhan.github.io/Portfolio-Profile-Udacity-Project/"
                 },
                 {
                     "title": "Gamer's Network",
                     "dates": "2019",
                     "description": "This is a Gamer's Network project,based on python. This was created as part of Final Project in Udacity's Intro to CS course.",
-                    "images": ["images/Gamers_Network.jpg"]
+                    "images": ["images/Gamers_Network.jpg"],
+                    "url": "https://github.com/kishorchouhan/Gamer-s_Network-Project"
                 },
                 {
                     "title": "Movie Website",
                     "dates": "2019",
                     "description": "This is a Movie Website project,based on python. This was created as part of Final Project in Udacity's Programming Foundations with Python course.",
-                    "images": ["images/Fresh_Tomatoes!.png"]
+                    "images": ["images/Fresh_Tomatoes!.png"],
+                    "url": "https://github.com/kishorchouhan/Programming-Foundations-with-Python-ud036"
                 },
                 {
                     "title": "Razer Product Landing Page",
                     "dates": "2019",
                     "description": "This is a Product Landing Page project based on HTML and CSS. This was created as part of Project in Responsive Web Design Certification course at FreeCodeCamp.",
-                    "images": ["images/Razer_Product_landing_page.png"]
+                    "images": ["images/Razer_Product_landing_page.png"],
+                    "url": "https://kishorchouhan.github.io/FCC-Project3/"
                 },
                 {
                     "title": "Survey Form",
                     "dates": "2019",
                     "description": "This is a 'survay form for programmers' project based on HTML and CSS. This was created as part of Project in Responsive Web Design Certification course at FreeCodeCamp.",
-                    "images": ["images/Survey_Form.png"]
+                    "images": ["images/Survey_Form.png"],
+                    "url": "https://kishorchouhan.github.io/freecodecamp_project2/"
                 },
                 {
                     "title": "Tribute Page",
                     "dates": "2019",
                     "description": "This was my first project i.e. Tribute Page to Shahid Bhagat Singh. Built using HTML and CSS. This was created as part of Project in Responsive Web Design Certification course at FreeCodeCamp.",
-                    "images": ["images/Tribute_Page.png"]
+                    "images": ["images/Tribute_Page.png"],
+                    "url": "https://kishorchouhan.github.io/freecodecamp_project1/"
                 }
             ]
         },
@@ -425,7 +444,10 @@ function inName(oldName) {
         init: function() {
             var dataProject = octopus.getProjectData();
             for (var i = 0; i < dataProject.projects.length; i++) {
+                this.formattedUrl = HTMLprojectUrl.replace("%data%",dataProject.projects[i].url);
                 this.formattedTitle = HTMLprojectTitle.replace("%data%",dataProject.projects[i].title);
+                this.formattedProjectTitle = this.formattedUrl + this.formattedTitle;
+                /*this.formattedTitle = HTMLprojectTitle.replace("%data%",dataProject.projects[i].title);*/
                 this.formattedDates = HTMLprojectDates.replace("%data%",dataProject.projects[i].dates);
                 this.formattedDescription = HTMLprojectDescription.replace("%data%",dataProject.projects[i].description);
                 viewProject.render();
@@ -440,7 +462,8 @@ function inName(oldName) {
         },
         render: function() {
             $("#projects").append(HTMLprojectStart);
-            $(".project-entry:last").append(this.formattedTitle);
+            $(".project-entry:last").append(this.formattedProjectTitle);
+            /*$(".project-entry:last").append(this.formattedTitle);*/
             $(".project-entry:last").append(this.formattedDates);
             $(".project-entry:last").append(this.formattedDescription);
         },
