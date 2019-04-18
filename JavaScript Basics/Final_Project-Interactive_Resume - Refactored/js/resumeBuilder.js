@@ -268,18 +268,55 @@ function inName(oldName) {
                     "description": "Created this game as part of Final Project of Object-Oriented JavaScript course in Udacity's Front-End Web Developer Nanodegree.In this game the goal is simple, get the hero character to move across the gray bricks towards the water without getting hit by the enemy bugs. The speed of enemy bugs will change with start of each game." ,
                     "images": ["images/Frogger Arcade Game.png"],
                     "url": "https://kishorchouhan.github.io/Frogger-Arcade-Game-Udacity-Project/"
-                },{
+                },
+                {
                     "title": "Cat Clicker App",
                     "dates": "2019",
                     "description": "Created this app as part of Project of JavaScript Design Patterns course in Udacity's Front-End Web Developer Nanodegree. In this app JavaScript is organized within a MVC (Model, View, Controller) architecture. In order to use this app, click on the name of the cat that you would like to see and their picture will appear on the right. Click on the 'Admin' button and three input boxes will appear. These boxes will allow you to change the name of the cat, the picture, and # of clicks on each cats' picture. Click the 'save' button to save your changes to the cat and the 'cancel' button to discard the changes." ,
                     "images": ["images/Cat Clicker Premium Pro.png"],
                     "url": "https://kishorchouhan.github.io/Cat-Clicker-Premium-Pro-Udacity-Project/"
-                },{
+                },
+                {
                     "title": "Online Resume",
                     "dates": "2019",
                     "description": "Created an online Interactive Resume as part of Final Project#2 of Udacity's Front-End Web Developer Nanodegree.",
                     "images": ["images/resume.png"],
                     "url": "https://kishorchouhan.github.io/Interactive_Resume-Udacity_Project/"
+                },
+                {
+                    "title": "Personal Portfolio Webpage",
+                    "dates": "2019",
+                    "description": "This project is from FreeCodeCamp: Responsive Web Design Course. In this project I have to build a Personal Portfolio Webpage which should be functionally similar to https://codepen.io/freeCodeCamp/full/zNBOYG .",
+                    "images": ["images/Personal Portfolio Webpage.png"],
+                    "url": "https://kishorchouhan.github.io/Personal-Portfolio-Webpage-FCC-Project/"
+                },
+                {
+                    "title": "Neighborhood Tour App",
+                    "dates": "2019",
+                    "description": "This is the Udacity Neighborhood Map Project! It's intended as a challenge to put together a website from various APIs. This includes making function calls to Google Maps and other location-based services like Foursquare. Included is a list of famous tourist places in Jaipur of India.",
+                    "images": ["images/neighborhood tour app.png"],
+                    "url": "https://kishorchouhan.github.io/Neighborhood-Map-App-Udacity-Project/"
+                },
+                {
+                    "title": "Moving Planner Website",
+                    "dates": "2019",
+                    "description": "This is a project from Udacity Intro To Ajax Course. The project consists of: Getting Values From Form using jQuery, Load Google Street View Image to background, Load article headers from New York Times, Load Wikipedia article headers using JSONP request",
+                    "images": ["images/Moving Planner Website.png"],
+                    "url": "https://kishorchouhan.github.io/Moving-Planner-Website-Udacity-Project/"
+                },
+                {
+                    "title": "News Aggregator Site",
+                    "dates": "2019",
+                    "description": "This is a project from Udacity Browser Rendering Optimization course. This is a simple web app that shows the top stories from Hacker News via its API. My mission is to find and fix the issues, and make the app gloriously performant.",
+                    "images": ["images/news aggregator site.png"],
+                    "url": "https://kishorchouhan.github.io/News-Aggregator-Site-Udacity-project/"
+                },
+                {
+                    "title": "Technical Documentation Page",
+                    "dates": "2019",
+                    "description": "This project is from FreeCodeCamp: Responsive Web Design Course. In this project I have to build a Technical Documentation Page which should be functionally similar to https://codepen.io/freeCodeCamp/full/NdrKKL",
+                    "images": ["images/Technical Documentation Page.png"],
+                    "url": "https://kishorchouhan.github.io/Technical-Documentation-Page-FCC-Project/"
                 },
                 {
                     "title": "Online Portfolio",
