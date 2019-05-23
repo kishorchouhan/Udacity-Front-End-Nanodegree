@@ -1,13 +1,13 @@
 # Udacity Front-End Web Developer Nanodegree
 This repository contains project work and class assignments for Udacity's Front-End Web Developer Nanodegree.
 
-## What I done and achived in this nanodegree:
+## What I have done and achieved in this nano degree:
 
 * Mastered the skills required to become a Front-End Web Developer, and started building beautiful, responsive websites optimized for mobile and desktop performance.
 
-* Learned the fundamentals of how the web works and gained a working knowledge of the three foundational languages that power each and every website: HTML, CSS and JavaScript.
+* Learned the fundamentals of how the web works and gain a working knowledge of the three foundational languages that power each and every website: HTML, CSS and JavaScript.
 
-### Courses and coresponding projects I developed in this nanodegree:
+### Courses and corresponding projects I developed in this nano degree:
 
 * Course 1. [Introduction to HTML and CSS(UD-001-India)](https://www.udacity.com/course/intro-to-html-and-css--ud001)
 * Course 2. [Responsive Web Design Fundamentals(UD-893)](https://www.udacity.com/course/responsive-web-design-fundamentals--ud893)
@@ -17,17 +17,17 @@ This repository contains project work and class assignments for Udacity's Front-
 * Course 6. [Object-Oriented JavaScript(UD-711)](https://www.udacity.com/course/object-oriented-javascript--ud711)
 * Course 7. [HTML5 Canvas(UD-292)](https://www.udacity.com/course/html5-canvas--ud292)
 * Course 1(Real). [Intro to HTML and CSS(UD-304)](https://classroom.udacity.com/courses/ud304)
-  - Created an ["online portfolio of work"](https://kishorchouhan.github.io/Portfolio-Profile-Udacity-Project/) as part of Final Project by using HTML, CSS and Bootstrap.
+  - Created an ["online portfolio of work"](https://kishorchouhan.github.io/Portfolio-Profile-Udacity-Project/) as part of the Final Project by using HTML, CSS and Bootstrap.
 * Course 4(Real). [JavaScript Basics(UD-804)](https://classroom.udacity.com/courses/ud804)
-  - Created an ["online Interactive Resume"](https://kishorchouhan.github.io/Interactive_Resume-Udacity_Project/) as part of Final Project.
+  - Created an ["online Interactive Resume"](https://kishorchouhan.github.io/Interactive_Resume-Udacity_Project/) as part of the Final Project.
 * Course 6(Real). [Object-Oriented JavaScript(UD-015)](https://classroom.udacity.com/courses/ud015)
-  - Created ["Frogger Arcade Game"](https://kishorchouhan.github.io/Frogger-Arcade-Game-Udacity-Project/) as part of Final Project.
+  - Created ["Frogger Arcade Game"](https://kishorchouhan.github.io/Frogger-Arcade-Game-Udacity-Project/) as part of the Final Project.
 * Course 8. [Website Performance Optimization(UD-884)](https://www.udacity.com/course/website-performance-optimization--ud884)
-  - Done [Website Optimization](https://github.com/kishorchouhan/Website-Optimization-Udacity-Project) as part of Final Project.
+  - Done [Website Optimization](https://github.com/kishorchouhan/Website-Optimization-Udacity-Project) as part of the Final Project.
 * Course 9. [Browser Rendering Optimization(UD-860)](https://www.udacity.com/course/browser-rendering-optimization--ud860)
   - Done rendering optimization of [news aggregator site](https://kishorchouhan.github.io/News-Aggregator-Site-Udacity-project/) as a final project work.
 * Course 10. [Intro to AJAX(UD-110)](https://www.udacity.com/course/intro-to-ajax--ud110)
-  - Prepared a ["Moving Planner Website"](https://kishorchouhan.github.io/Moving-Planner-Website-Udacity-Project/) as a part of project.
+  - Prepared a ["Moving Planner Website"](https://kishorchouhan.github.io/Moving-Planner-Website-Udacity-Project/) as a part of the project.
 * Course 11. [JavaScript Design Patterns(UD-989)](https://www.udacity.com/course/javascript-design-patterns--ud989)
   - Created ["Cat Clicker App"](https://kishorchouhan.github.io/Cat-Clicker-Premium-Pro-Udacity-Project/) as a part of Project in this course.
   - Prepared ["Neighborhood Tour App"](https://kishorchouhan.github.io/Neighborhood-Map-App-Udacity-Project/) as a final project of course.
@@ -62,7 +62,7 @@ Project 4: Website Optimization
 
 Project 5: Neighborhood Map Project  
 [Intro to AJAX](https://www.udacity.com/course/viewer#!/c-ud110-nd)  
-[JavaScript Design Patters](https://www.udacity.com/course/viewer#!/c-ud989-nd)  
+[JavaScript Design Patterns](https://www.udacity.com/course/viewer#!/c-ud989-nd)  
 
 Project 6: Feed Reader Testing  
 [JavaScript Testing](https://www.udacity.com/course/viewer#!/c-ud549-nd)  
