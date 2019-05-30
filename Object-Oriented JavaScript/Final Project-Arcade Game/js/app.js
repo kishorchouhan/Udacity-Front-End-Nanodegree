@@ -1,16 +1,19 @@
-// Enemies our player must avoid
+/** Some useful data:
+ * var canvasW = 505;
+ * var canvasH = 606;
+ * var blockW = 101;
+ * var blockH = 83;
+ * var totalRow = 6;
+ * var totalCol = 5;
+ */
 
-////var canvasW = 505;
-////var canvasH = 606;
-////var blockW = 101;
-////var blockH = 83;
-////var totalRow = 6;
-////var totalCol = 5;
+
 var playerTopHeadOut = 83/4.0;
 var enemyStartX = -101;
 var playerStartX = 202;
 var playerStartY = 83*5 - playerTopHeadOut;
 
+// Enemies our player must avoid
 var Enemy = function(x, y, speed) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
@@ -58,8 +61,11 @@ Player.prototype.update = function(dt) {
     //this.handleInput();
 };
 
+// Draw the player on the screen, required method for game
+// Display score
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    displayScore(score);
 };
 
 Player.prototype.handleInput = function(keychar) {
@@ -74,8 +80,18 @@ Player.prototype.handleInput = function(keychar) {
         if (this.y < (83 - playerTopHeadOut)) {
             this.y = playerStartY;
             this.x = playerStartX;
+            score += 10;
         }
     }
+};
+
+// Function to display player's score
+var displayScore = function(aScore) {
+    var firstTag = document.getElementsByTagName("h1")[0];
+
+    // add player score to div element created
+    scoreDiv.innerHTML = 'Score: ' + aScore;
+    firstTag.insertAdjacentElement("afterend", scoreDiv)
 };
 
 //Check for collision between enemy and player
@@ -86,11 +102,15 @@ var checkCollision = function (anEnemy) {
         && player.x  +70>= anEnemy.x) {
             player.x = playerStartX;
             player.y = playerStartY;
+            score = 0;
     }
+
+
 }
 
-
-
+// Declare new score and gameLevel variables to store score and level
+var score = 0;
+var scoreDiv = document.createElement('div');
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
@@ -102,7 +122,8 @@ var totalEnemyRows = 3;
 var EnemyPerRow = 2;
 for (var i = 0; i < totalEnemyRows; i++) {
     for (var j = 0; j < EnemyPerRow; j++) {
-        var enemy = new Enemy(enemyStartX, (83 * (i+1))- playerTopHeadOut, Math.random()*100 + 5);
+        var speedChange = Math.random()*150 + 10;
+        var enemy = new Enemy(enemyStartX, (83 * (i+1))- playerTopHeadOut, speedChange);
         allEnemies.push(enemy);
     }
 }

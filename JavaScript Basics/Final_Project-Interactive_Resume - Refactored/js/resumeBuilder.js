@@ -1,233 +1,3 @@
-/** ======== Old Code ========**/
-
-//var formattedName = HTMLheaderName.replace("%data%", name);
-/*
-var bio = {
-    "name" : "Kishor",
-    "role" : "Web Developer",
-    "contacts" : {
-        "mobile": "773-785-0385",
-        "email": "devkishorbwr@gmail.com",
-        "github": "kishorchouhan",
-        "twitter": "@kishorchouhan19",
-        "location": "Rajasthan, India"
-    },
-    "welcomeMessage" : "Hello! I'm a Front-End Developer. Thanks for stopping by!",
-    "skills" : ["HTML", "CSS", "JS", "Python"],
-    "bioPic" : "images/pic.jpg",
-    "display": function() {
-        var formattedName = HTMLheaderName.replace("%data%", bio.name);
-        var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-        $("#header").prepend(formattedRole);
-        $("#header").prepend(formattedName);
-    
-        var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-        var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-        var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-        var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-        var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-        $("#topContacts").prepend(formattedLocation);
-        $("#topContacts").prepend(formattedTwitter);
-        $("#topContacts").prepend(formattedGithub);
-        $("#topContacts").prepend(formattedEmail);
-        $("#topContacts").prepend(formattedMobile);
-    
-        var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-        var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
-        $("#header").append(formattedBioPic);
-        $("#header").append(formattedWelcomeMsg);
-        
-        if (bio.skills.length > 0) {
-            $("#header").append(HTMLskillsStart);
-            
-            bio.skills.forEach(function(skill) {
-                var formattedSkill = HTMLskills.replace("%data%", skill);
-                $("#skills").append(formattedSkill);
-            });
-        };
-    }
-};
-
-bio.display();
-
-var work = {
-    "jobs": [/*{
-        "employer": "Election Department of Beawar",
-        "title": "Computer Operator",
-        "location": "Beawar",
-        "dates": "2018",
-        "description": "Worked as an computer operator."
-    }*//*],
-    "display": function() {
-        //replaced "for (job in work.jobs)" with normal for.
-        for (var i = 0; i < work.jobs.length; i++) {
-            // create new div for work experience
-            $("#workExperience").append(HTMLworkStart);
-            // concat employer and title
-            var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
-            var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
-            var formattedEmployerTitle = formattedEmployer + formattedTitle;
-            $(".work-entry:last").append(formattedEmployerTitle);
-    
-            var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
-            $(".work-entry:last").append(formattedDates);
-    
-            var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
-            $(".work-entry:last").append(formattedDescription);
-        };
-    }
-};
-
-work.display();
-
-var projects = {
-    "projects": [{
-        "title": "Online Resume",
-        "dates": "2019",
-        "description": "Created an online Interactive Resume as part of Final Project#2 of Udacity's Front-End Web Developer Nanodegree.",
-        "images": ["images/resume.png"]
-    },
-    {
-        "title": "Online Portfolio",
-        "dates": "2019",
-        "description": "Created an online portfolio of work as part of Final Project#1 of Udacity's Front-End Web Developer Nanodegree by using HTML, CSS and Bootstrap.",
-        "images": ["images/Portfolio_Profile-Kishor.png"]
-    },
-    {
-        "title": "Gamer's Network",
-        "dates": "2019",
-        "description": "This is a Gamer's Network project,based on python. This was created as part of Final Project in Udacity's Intro to CS course.",
-        "images": ["images/Gamers_Network.jpg"]
-    },
-    {
-        "title": "Movie Website",
-        "dates": "2019",
-        "description": "This is a Movie Website project,based on python. This was created as part of Final Project in Udacity's Programming Foundations with Python course.",
-        "images": ["images/Fresh_Tomatoes!.png"]
-    },
-    {
-        "title": "Razer Product Landing Page",
-        "dates": "2019",
-        "description": "This is a Product Landing Page project based on HTML and CSS. This was created as part of Project in Responsive Web Design Certification course at FreeCodeCamp.",
-        "images": ["images/Razer_Product_landing_page.png"]
-    },
-    {
-        "title": "Survey Form",
-        "dates": "2019",
-        "description": "This is a 'survay form for programmers' project based on HTML and CSS. This was created as part of Project in Responsive Web Design Certification course at FreeCodeCamp.",
-        "images": ["images/Survey_Form.png"]
-    },
-    {
-        "title": "Tribute Page",
-        "dates": "2019",
-        "description": "This was my first project i.e. Tribute Page to Shahid Bhagat Singh. Built using HTML and CSS. This was created as part of Project in Responsive Web Design Certification course at FreeCodeCamp.",
-        "images": ["images/Tribute_Page.png"]
-    }],
-    "display": function() {
-        for (var i = 0; i < projects.projects.length; i++) {
-            $("#projects").append(HTMLprojectStart);
-    
-            var formattedTitle = HTMLprojectTitle.replace("%data%",projects.projects[i].title);
-            $(".project-entry:last").append(formattedTitle);
-    
-            var formattedDates = HTMLprojectDates.replace("%data%",projects.projects[i].dates);
-            $(".project-entry:last").append(formattedDates);
-    
-            var formattedDescription = HTMLprojectDescription.replace("%data%",projects.projects[i].description);
-            $(".project-entry:last").append(formattedDescription);
-    
-            if (projects.projects[i].images.length > 0) {
-                for (image in projects.projects[i].images) {
-                    var formattedImage = HTMLprojectImage.replace("%data%",projects.projects[i].images[image]);
-                    $(".project-entry:last").append(formattedImage);
-                }
-            }
-        }
-    }
-};
- 
-projects.display();
-
-var education = {
-    "schools": [
-        {
-            "name": "Government Engineering College Bikaner",
-            "degree": "B.Tech",
-            "majors": ["Electrical Engineering"],
-            "dates": "2013-2017",
-            "location": "Bikaner",
-            "url": "http://www.ecb.ac.in"
-        }, {
-            "name": "Udacity Front End Nanodegree",
-            "degree": "Nanodegree",
-            "majors": ["Computer Science"],
-            "dates": "2019",
-            "location": "Mountain View, CA",
-            "url": "https://www.udacity.in"
-        }
-    ],
-    "onlineCourses": [
-        {
-            "title": "Responsive Web Design Certification",
-            "school": "FreeCodeCamp",
-            "dates": "2019",
-            "url": "https://learn.freecodecamp.org/"
-        }
-    ],
-    "display": function() {
-        education.schools.forEach(function(school) {
-            $("#education").append(HTMLschoolStart);
-    
-            var formattedName = HTMLschoolName.replace("%data%", school.name);
-            var formattedDegree = HTMLschoolDegree.replace("%data%", school.degree);
-            var formattedSchoolTitle = formattedName + formattedDegree;
-            $(".education-entry:last").append(formattedSchoolTitle);
-            var formattedDate = HTMLschoolDates.replace("%data%",school.dates);
-            $(".education-entry:last").append(formattedDate);
-            var formattedLocation = HTMLschoolLocation.replace("%data%", school.location);
-            $(".education-entry:last").prepend(formattedLocation);
-            var formattedMajors = HTMLschoolMajor.replace("%data%", school.majors);
-            $(".education-entry:last").append(formattedMajors);
-        });
-        education.onlineCourses.forEach(function(course) {
-            $(".education-entry:last").append(HTMLonlineClasses);
-            var formattedTitle = HTMLonlineTitle.replace("%data%", course.title);
-            var formattedSchool = HTMLonlineSchool.replace("%data%", course.school);
-            var formattedCourseTitle = formattedTitle + formattedSchool;
-            $(".education-entry:last").append(formattedCourseTitle);
-            var formattedDates = HTMLonlineDates.replace("%data%", course.dates);
-            $(".education-entry:last").append(formattedDates);
-            var formattedURL = HTMLonlineURL.replace("%data%", course.url);
-            $(".education-entry:last").append(formattedURL);
-        });
-    }
-};
-
-education.display();
-*/
-/*
-$("#main").append(internationalizeButton);
-function inName(oldName) {
-    var finalName = oldName;
-    // My Solution:-
-    var firstLetter = finalName[0];
-    firstLetter = firstLetter.toUpperCase();
-    nameArray = finalName.split(" ");
-    nameArray[0] = nameArray[0].toLowerCase();
-    nameArray[1] = nameArray[1].toUpperCase();
-    finalName = nameArray.join(" ");
-    finalName = finalName.replace(finalName[0], firstLetter);
-    // course solution:-
-    //var names = oldName.split(" ");
-    //names[1] = names[1].toUpperCase();
-    //names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
-    //finalName = names.join(" ");
-    return finalName;
-}
-*/
-
-//$("#mapDiv").append(googleMap);
-
 /** ======== Refactored Code ========**/
 
 (function() {
@@ -246,8 +16,8 @@ function inName(oldName) {
                 "twitter": "@kishorchouhan19",
                 "location": "Rajasthan, India"
             },
-            "welcomeMessage": "Hi, I'm an Electrical Engineer (Selected for Assistant Loco Pilot in Indian Railway) turned Web Developer because it’s just awesome. I have always been passionate about programming and what it stands for. I am currently involved in the Front End Web Developer Nanodegree program at Udacity and preparing to enter the software Industry. Programming, in my opinion, is a medium to convert thoughts to action and to be creative in solving problems.",
-            "skills": ["HTML", "CSS", "JS", "Python"],
+            "welcomeMessage": "I'm a front end web developer (Previously selected for Assistant Loco Pilot in Indian Railway). I love solving problems, providing solutions and working on open source projects that save people time and money and help their day to day lives. Programming, in my opinion, is a medium to convert thoughts to action and to be creative in solving problems. Thanks for stopping by!",
+            "skills": ["JavaScript","HTML5", "CSS", "jQuery", "Bootstarp", "KnockoutJS", "Git/GitHub", "Python"],
             "bioPic": "images/pic.jpg",
         },
 
@@ -263,25 +33,46 @@ function inName(oldName) {
 
         projectData: {
             "projects": [{
-                    "title": "Frogger Arcade Game",
+                    "title": "Neighborhood Tour App",
                     "dates": "2019",
-                    "description": "Created this game as part of Final Project of Object-Oriented JavaScript course in Udacity's Front-End Web Developer Nanodegree.In this game the goal is simple, get the hero character to move across the gray bricks towards the water without getting hit by the enemy bugs. The speed of enemy bugs will change with start of each game." ,
-                    "images": ["images/Frogger Arcade Game.png"],
-                    "url": "https://kishorchouhan.github.io/Frogger-Arcade-Game-Udacity-Project/"
+                    "description": "A single-page web application, built using the Knockout framework and Google Maps API, that displays a Google Map of Jaipur, India and various landmarks which point to famous tourist places in this city. Users can search all included landmarks and, when selected, additional information about a landmark/place is presented from the Firebase real-time backend.<br>► Third-party APIs: Google Maps, FourSquare<br>► Third-party Libraries/Plug-ins: Knockout.js, jQuery<br>► Highlights: Worked with Promises library, MVVM Framework, second-ever SPA, Gulp Build Process<br>► Technologies used: HTML/CSS/JavaScript.<br>Building this application was complex and incorporated a variety of data points that made my initial builds unwieldy to manage. The most challenging aspects of this project were ensuring the implementation of scalable code architecture and handling multiple asynchronous AJAX calls.<br>It was highly rewarding to learn how to use an MV* framework (Knockout), a JavaScript Promises library while integrating data from third-party API's (FourSquare, Google Maps) and then seeing it all come together as one responsively designed SPA. This was easily one of my favourite projects.",
+                    "images": ["images/neighborhood tour app.png"],
+                    "url": "https://kishorchouhan.github.io/Neighborhood-Map-App-Udacity-Project/"
                 },
                 {
-                    "title": "Cat Clicker App",
+                    "title": "Frogger Arcade Game",
                     "dates": "2019",
-                    "description": "Created this app as part of Project of JavaScript Design Patterns course in Udacity's Front-End Web Developer Nanodegree. In this app JavaScript is organized within a MVC (Model, View, Controller) architecture. In order to use this app, click on the name of the cat that you would like to see and their picture will appear on the right. Click on the 'Admin' button and three input boxes will appear. These boxes will allow you to change the name of the cat, the picture, and # of clicks on each cats' picture. Click the 'save' button to save your changes to the cat and the 'cancel' button to discard the changes." ,
-                    "images": ["images/Cat Clicker Premium Pro.png"],
-                    "url": "https://kishorchouhan.github.io/Cat-Clicker-Premium-Pro-Udacity-Project/"
+                    "description": "A game inspired by the classic arcade game Frogger. In this game the goal is simple, get the hero character to move across the grey bricks towards the water without getting hit by the enemy bugs. The speed of enemy bugs will change with the start of each game.<br>I developed it as a final project of Object-Oriented JavaScript and HTML5-Canvas course in Udacity’s Front-End Web Developer Nanodegree to check out my knowledge of these technologies.<br>Udacity provided the game engine and supported files.<br>► Technologies used: HTML5, HTML5 - Canvas, CSS, JavaScript and JQuery.<br>► Highlights: Collision Mechanics, Game Logic, JavaScript Functions, Classes, Prototypal Classes, Pseudoclassical Patterns and Scopes." ,
+                    "images": ["images/Frogger Arcade Game.jpg"],
+                    "url": "https://kishorchouhan.github.io/Frogger-Arcade-Game-Udacity-Project/"
                 },
                 {
                     "title": "Online Resume",
                     "dates": "2019",
-                    "description": "Created an online Interactive Resume as part of Final Project#2 of Udacity's Front-End Web Developer Nanodegree.",
+                    "description": "An interactive resume application that reads your resume content from a JSON file and dynamically displays that content within a provided template. Further customized the project by personalizing the design using CSS.<br>Created this online Interactive Resume as part of the Project of JavaScript Basics course in Udacity's Front-End Web Developer Nanodegree.<br>► Technologies used: objects, functions, conditionals, and control structures to compose the content that will display on the resume.",
                     "images": ["images/resume.png"],
                     "url": "https://kishorchouhan.github.io/Interactive_Resume-Udacity_Project/"
+                },
+                {
+                    "title": "Website Optimization",
+                    "dates": "2019",
+                    "description": "• Optimized critical rendering path of an existing web page to increase the PageSpeed Insights score from 60 to over 95 for both mobile and desktop<br>• Applied fixes for inefficiencies of the website scroll animation and image resizing to achieve a consistent 60 frames-per-second.<br>• Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.",
+                    "images": ["images/pizza.png"],
+                    "url": "https://kishorchouhan.github.io/Website-Optimization-Udacity-Project/views/pizza.html"
+                },
+                {
+                    "title": "Technical Documentation Page",
+                    "dates": "2019",
+                    "description": "This is a simple web page documenting Basic JavaScript. It is part of FreeCodeCamp's challenges for Responsive Web Design.<br>In this page, there are a navbar and the page's main content (technical documentation). When clicking on a navbar element, the page should navigate to the corresponding section. On regular sized devices (laptops, desktops), the navbar should be shown on the left side of the screen and should always be visible.<br>► Technologies used: HTML5, CSS(layout: fix / relative / absolute position), media query.",
+                    "images": ["images/Technical Documentation Page.png"],
+                    "url": "https://kishorchouhan.github.io/Technical-Documentation-Page-FCC-Project/"
+                },
+                {
+                    "title": "Cat Clicker App",
+                    "dates": "2019",
+                    "description": "Application display a list of at least 5 cats, listed by name, an area to display the selected cat’s name, picture and text showing the number of clicks on picture and an admin button to edit the cat details.<br>Created this app as part of the Project of JavaScript Design Patterns course in Udacity's Front-End Web Developer Nanodegree and learned how to structure the code and build an organized application. In this app, JavaScript is organized within an MVC (Model, View, Controller) architecture.<br>In order to use this app, click on the name of the cat that you would like to see and their picture will appear on the right. Click on the 'Admin' button and three input boxes will appear. These boxes will allow you to change the name of the cat, the picture, and # of clicks on each cats' picture. Click the 'save' button to save your changes to the cat and the 'cancel' button to discard the changes.<br>► Technologies used: JavaScript, CSS, HTML5" ,
+                    "images": ["images/Cat Clicker Premium Pro.png"],
+                    "url": "https://kishorchouhan.github.io/Cat-Clicker-Premium-Pro-Udacity-Project/"
                 },
                 {
                     "title": "Personal Portfolio Webpage",
@@ -289,13 +80,6 @@ function inName(oldName) {
                     "description": "This project is from FreeCodeCamp: Responsive Web Design Course. In this project I have to build a Personal Portfolio Webpage which should be functionally similar to https://codepen.io/freeCodeCamp/full/zNBOYG .",
                     "images": ["images/Personal Portfolio Webpage.png"],
                     "url": "https://kishorchouhan.github.io/Personal-Portfolio-Webpage-FCC-Project/"
-                },
-                {
-                    "title": "Neighborhood Tour App",
-                    "dates": "2019",
-                    "description": "This is the Udacity Neighborhood Map Project! It's intended as a challenge to put together a website from various APIs. This includes making function calls to Google Maps and other location-based services like Foursquare. Included is a list of famous tourist places in Jaipur of India.",
-                    "images": ["images/neighborhood tour app.png"],
-                    "url": "https://kishorchouhan.github.io/Neighborhood-Map-App-Udacity-Project/"
                 },
                 {
                     "title": "Moving Planner Website",
@@ -312,16 +96,9 @@ function inName(oldName) {
                     "url": "https://kishorchouhan.github.io/News-Aggregator-Site-Udacity-project/"
                 },
                 {
-                    "title": "Technical Documentation Page",
-                    "dates": "2019",
-                    "description": "This project is from FreeCodeCamp: Responsive Web Design Course. In this project I have to build a Technical Documentation Page which should be functionally similar to https://codepen.io/freeCodeCamp/full/NdrKKL",
-                    "images": ["images/Technical Documentation Page.png"],
-                    "url": "https://kishorchouhan.github.io/Technical-Documentation-Page-FCC-Project/"
-                },
-                {
                     "title": "Online Portfolio",
                     "dates": "2019",
-                    "description": "Created an online portfolio of work as part of Final Project#1 of Udacity's Front-End Web Developer Nanodegree by using HTML, CSS and Bootstrap.",
+                    "description": "In this project, I was required to turn a mock-up into a responsive web page.<br>The site is responsive to different viewport sizes.<br>This project is from FreeCodeCamp: Responsive Web Design Course.<br>► Used: HTML5, CSS3 and Bootstrap's grid system.",
                     "images": ["images/Portfolio_Profile-Kishor.png"],
                     "url": "https://kishorchouhan.github.io/Portfolio-Profile-Udacity-Project/"
                 },
