@@ -47,6 +47,13 @@
                     "url": "https://kishorchouhan.github.io/Frogger-Arcade-Game-Udacity-Project/"
                 },
                 {
+                    "title": "Tic-Tac-Toe Game",
+                    "dates": "2019",
+                    "description": "This is a Tic-Tac-Toe game built with React.<br>Features:<br>* Lets you play Tic-Tac-Toe; <br>* Indicates when one player has won the game; <br>* Stores the history of moves during the game;<br>* Allows players to jump back in time to see older versions of the game board; <br><br>I understood some key features of React in this project like: <br>* Passing data through props<br>* Lifting state up<br>* Controlled component",
+                    "images": ["images/Tic-Tac-Toe Game.jpg"],
+                    "url": "https://kishorchouhan.github.io/Tic-Tac-Toe_Game/"
+                },
+                {
                     "title": "Online Resume",
                     "dates": "2019",
                     "description": "An interactive resume application that reads your resume content from a JSON file and dynamically displays that content within a provided template. Further customized the project by personalizing the design using CSS.<br>Created this online Interactive Resume as part of the Project of JavaScript Basics course in Udacity's Front-End Web Developer Nanodegree.<br>► Technologies used: objects, functions, conditionals, and control structures to compose the content that will display on the resume.",
