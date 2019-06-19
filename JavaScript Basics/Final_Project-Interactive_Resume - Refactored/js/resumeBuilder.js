@@ -17,7 +17,7 @@
                 "location": "Rajasthan, India"
             },
             "welcomeMessage": "I'm a front end web developer (Previously selected for Assistant Loco Pilot in Indian Railway). I love solving problems, providing solutions and working on open source projects that save people time and money and help their day to day lives. Programming, in my opinion, is a medium to convert thoughts to action and to be creative in solving problems. Thanks for stopping by!",
-            "skills": ["JavaScript","HTML5", "CSS", "jQuery", "Bootstarp", "KnockoutJS", "Git/GitHub", "Python"],
+            "skills": ["JavaScript","ReactJS","HTML5", "CSS", "jQuery", "Bootstarp", "KnockoutJS", "Git/GitHub", "Python"],
             "bioPic": "images/pic.jpg",
         },
 
