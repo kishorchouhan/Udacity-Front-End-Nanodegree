@@ -8,6 +8,7 @@ This repository contains project work and class assignments for Udacity's Front-
 * Learned the fundamentals of how the web works and gain a working knowledge of the three foundational languages that power each and every website: HTML, CSS and JavaScript.
 
 ### Courses and corresponding projects I developed in this nano degree:
+> **_Instruction for course 1, 4 and 6:_** If you are going to do this course using below links then ensure that in your classroom link there should be the same course code which is mentioned below. If you don't find it the same then enter it manually.
 
 * Course 1(Don't do this). [Introduction to HTML and CSS(UD-001-India)](https://www.udacity.com/course/intro-to-html-and-css--ud001)
 * Course 1(This is main course with project). [Intro to HTML and CSS(UD-304)](https://classroom.udacity.com/courses/ud304)
