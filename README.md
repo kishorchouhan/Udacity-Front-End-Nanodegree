@@ -9,28 +9,39 @@ This repository contains project work and class assignments for Udacity's Front-
 
 ### Courses and corresponding projects I developed in this nano degree:
 
-* Course 1. [Introduction to HTML and CSS(UD-001-India)](https://www.udacity.com/course/intro-to-html-and-css--ud001)
-* Course 2. [Responsive Web Design Fundamentals(UD-893)](https://www.udacity.com/course/responsive-web-design-fundamentals--ud893)
-* Course 3. [Responsive Images(UD-882)](https://www.udacity.com/course/responsive-images--ud882)
-* Course 4. [Introduction to JavaScript(UD-803-India)](https://www.udacity.com/course/intro-to-javascript--ud803)
-* Course 5. [Intro to JQuery(UD-245)](https://www.udacity.com/course/intro-to-jquery--ud245)
-* Course 6. [Object-Oriented JavaScript(UD-711)](https://www.udacity.com/course/object-oriented-javascript--ud711)
-* Course 7. [HTML5 Canvas(UD-292)](https://www.udacity.com/course/html5-canvas--ud292)
-* Course 1(Real). [Intro to HTML and CSS(UD-304)](https://classroom.udacity.com/courses/ud304)
+* Course 1(Don't do this). [Introduction to HTML and CSS(UD-001-India)](https://www.udacity.com/course/intro-to-html-and-css--ud001)
+* Course 1(This is main course with project). [Intro to HTML and CSS(UD-304)](https://classroom.udacity.com/courses/ud304)
   - Created an ["online portfolio of work"](https://kishorchouhan.github.io/Portfolio-Profile-Udacity-Project/) as part of the Final Project by using HTML, CSS and Bootstrap.
-* Course 4(Real). [JavaScript Basics(UD-804)](https://classroom.udacity.com/courses/ud804)
+
+* Course 2. [Responsive Web Design Fundamentals(UD-893)](https://www.udacity.com/course/responsive-web-design-fundamentals--ud893)
+
+* Course 3. [Responsive Images(UD-882)](https://www.udacity.com/course/responsive-images--ud882)
+
+* Course 4(Don't do this). [Introduction to JavaScript(UD-803-India)](https://www.udacity.com/course/intro-to-javascript--ud803)
+* Course 4(This is main course with project). [JavaScript Basics(UD-804)](https://classroom.udacity.com/courses/ud804)
   - Created an ["online Interactive Resume"](https://kishorchouhan.github.io/Interactive_Resume-Udacity_Project/) as part of the Final Project.
-* Course 6(Real). [Object-Oriented JavaScript(UD-015)](https://classroom.udacity.com/courses/ud015)
+
+* Course 5. [Intro to JQuery(UD-245)](https://www.udacity.com/course/intro-to-jquery--ud245)
+
+* Course 6(Don't do this). [Object-Oriented JavaScript(UD-711)](https://www.udacity.com/course/object-oriented-javascript--ud711)
+* Course 6(This is main course with project). [Object-Oriented JavaScript(UD-015)](https://classroom.udacity.com/courses/ud015)
   - Created ["Frogger Arcade Game"](https://kishorchouhan.github.io/Frogger-Arcade-Game-Udacity-Project/) as part of the Final Project.
+
+* Course 7. [HTML5 Canvas(UD-292)](https://www.udacity.com/course/html5-canvas--ud292)
+
 * Course 8. [Website Performance Optimization(UD-884)](https://www.udacity.com/course/website-performance-optimization--ud884)
   - Done [Website Optimization](https://github.com/kishorchouhan/Website-Optimization-Udacity-Project) as part of the Final Project.
+
 * Course 9. [Browser Rendering Optimization(UD-860)](https://www.udacity.com/course/browser-rendering-optimization--ud860)
   - Done rendering optimization of [news aggregator site](https://kishorchouhan.github.io/News-Aggregator-Site-Udacity-project/) as a final project work.
+
 * Course 10. [Intro to AJAX(UD-110)](https://www.udacity.com/course/intro-to-ajax--ud110)
   - Prepared a ["Moving Planner Website"](https://kishorchouhan.github.io/Moving-Planner-Website-Udacity-Project/) as a part of the project.
+
 * Course 11. [JavaScript Design Patterns(UD-989)](https://www.udacity.com/course/javascript-design-patterns--ud989)
   - Created ["Cat Clicker App"](https://kishorchouhan.github.io/Cat-Clicker-Premium-Pro-Udacity-Project/) as a part of Project in this course.
   - Prepared ["Neighborhood Tour App"](https://kishorchouhan.github.io/Neighborhood-Map-App-Udacity-Project/) as a final project of course.
+
 * Course 12. [JavaScript Testing(UD-549)](https://www.udacity.com/course/javascript-testing--ud549)
 
 
