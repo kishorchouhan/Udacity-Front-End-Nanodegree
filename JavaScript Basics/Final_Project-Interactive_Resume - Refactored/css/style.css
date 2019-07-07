@@ -24,7 +24,6 @@ h6 {
   padding: 0 5%;
 }
 
-
 h1 {
   font-size: 40px;
   color: #f5a623;
@@ -59,10 +58,8 @@ h3,
 h4,
 h5 {
   padding: 10px 5%;
-
 }
 
-/* edit */
 .education-entry h3 {
   margin-left: 0;
   padding-left: 0;
@@ -75,7 +72,7 @@ h5 {
   margin-top: 20px;
   border: 3px solid gray;
 }
-/* end */
+
 .date-text {
   font-style: italic;
   font-size: 14px;
@@ -90,7 +87,6 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -115,7 +111,7 @@ a {
 
 #skills-h3 {
   color: #f5ae23;
-  display: none;
+  display: block;
 }
 
 .orange {
@@ -141,7 +137,6 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
 #header {
   background-color: #484848;
 }
@@ -156,9 +151,7 @@ a {
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  columns: 2;
   padding: 10px;
 }
 
@@ -174,7 +167,7 @@ ul {
   float: left;
   padding: 10px;
   width: 200px;
-  display: none;
+  display: block;
 }
 
 img {
@@ -187,39 +180,7 @@ span {
 
 #lets-connect {
   text-align: center;
-}
-
-/* Media queries to handle various device widths */
-
-@media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
-  }
-}
-
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
-  .imgsize {
-    width: 90%;
-    height: 100%;
-    margin-left: 5%;
-    margin-top: 20px;
-    border: 3px solid gray;
-  }
+  margin-top: 10px;
 }
 
 #map {
@@ -234,9 +195,30 @@ span {
   padding-bottom: 5%;
 }
 
-@media only screen and (min-width: 750px) {
-  #skills-h3,
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 900px) {
   .biopic {
-    display: block;
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .biopic {
+    width: 150px;
+    height: 150px;
+  }
+  .welcome-message {
+    display: none;
+  }
+  .imgsize {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 20px;
+    border: 3px solid gray;
+  }
+  #mapDiv {
+    margin-bottom: 5%;
   }
 }
